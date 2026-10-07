@@ -1,0 +1,35 @@
+name: Test
+
+# Installs and tests the formula on macOS and Linux whenever it changes,
+# which is mostly when secretli/cli's release workflow pushes a new version.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      # Also installs this repository as the tap secretli/tap.
+      - uses: Homebrew/actions/setup-homebrew@9ffcbcc2c89631400988e8d4b1e3ac17dbbe3fe9 # main
+
+      - name: Audit
+        run: |
+          brew style secretli/tap
+          brew audit --strict --online secretli/tap/secretli
+
+      - name: Install and test
+        run: |
+          brew install secretli/tap/secretli
+          brew test secretli/tap/secretli
+          secretli --version
