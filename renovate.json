@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "description": "Formula/secretli.rb is written by the release workflow of secretli/cli; Renovate keeps only the workflow's actions up to date.",
+  "enabledManagers": [
+    "github-actions"
+  ]
+}
