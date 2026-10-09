@@ -1,4 +1,4 @@
-# Written by the release workflow of secretli/cli for v0.11.0; changes here are
+# Written by the release workflow of secretli/cli for v0.12.0; changes here are
 # overwritten by the next release. The formula lives in secretli/cli's
 # scripts/homebrew-formula.sh.
 class Secretli < Formula
@@ -8,23 +8,23 @@ class Secretli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/secretli/cli/releases/download/v0.11.0/secretli_v0.11.0_darwin_arm64.tar.gz"
-      sha256 "7b139c765724e0d1fbd303c1fa028d943fe579ffc6dbd7083d30c8ca74de3323"
+      url "https://github.com/secretli/cli/releases/download/v0.12.0/secretli_v0.12.0_darwin_arm64.tar.gz"
+      sha256 "70b846bd019437aa7a72f0c80e63e078fa803e59b84a26f8318e6e36b3708035"
     end
     on_intel do
-      url "https://github.com/secretli/cli/releases/download/v0.11.0/secretli_v0.11.0_darwin_amd64.tar.gz"
-      sha256 "4555c44182b4a2ce538d99579a31bc778d0a74300810a55823c96c7f068d4075"
+      url "https://github.com/secretli/cli/releases/download/v0.12.0/secretli_v0.12.0_darwin_amd64.tar.gz"
+      sha256 "66b325858a26f67fcc22b367205da47d3f2a18b65ffd86ef5aec50d6d0b0e2a0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/secretli/cli/releases/download/v0.11.0/secretli_v0.11.0_linux_arm64.tar.gz"
-      sha256 "c4e2cb414b31ad8034276c3f6bcb03df444b521f8780ba34878b3879a2dba6a3"
+      url "https://github.com/secretli/cli/releases/download/v0.12.0/secretli_v0.12.0_linux_arm64.tar.gz"
+      sha256 "697cedfb4318d0c0fb85e700ac3e2743539c934cc0cd3144c1d9610057c4bc5b"
     end
     on_intel do
-      url "https://github.com/secretli/cli/releases/download/v0.11.0/secretli_v0.11.0_linux_amd64.tar.gz"
-      sha256 "50879b1cd8dfde0df62c62ee1a70df8c674e7b7aeab4b5f8d9d5558b8603b3fc"
+      url "https://github.com/secretli/cli/releases/download/v0.12.0/secretli_v0.12.0_linux_amd64.tar.gz"
+      sha256 "4ed515f4ad4bf4383b819f741927e950d5a48c195d4c662528f20d36e9b894b3"
     end
   end
 
