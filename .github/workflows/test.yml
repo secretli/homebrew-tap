@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 15
     steps:
       # Also installs this repository as the tap secretli/tap.
-      - uses: Homebrew/actions/setup-homebrew@fccef3b26268fc4a788fd7ad7c189f3a105cbf13 # main
+      - uses: Homebrew/actions/setup-homebrew@4790763c0a3ba4036f72634dc079c4a7dfcd4878 # main
 
       - name: Audit
         run: |
